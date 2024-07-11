@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SingUpComponent } from './sing-up/sing-up.component';
 import { LayoutmModule } from './layoutm/layoutm.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CostumpipeModule } from './layoutm/costumpipe/costumpipe.module';
 
 
@@ -20,7 +20,7 @@ import { CostumpipeModule } from './layoutm/costumpipe/costumpipe.module';
     BrowserModule,
     AppRoutingModule,
     LayoutmModule,
-    FormsModule,
+   ReactiveFormsModule,
     CostumpipeModule
 
   ],

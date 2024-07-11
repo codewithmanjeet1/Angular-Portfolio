@@ -264,20 +264,24 @@
     <div class="signin">
         <div class="content">
             <h2>Sign In</h2>
-            <form #form="ngForm" action="" method="post" (ngSubmit)="formdata(form)">
+            <form [formGroup]="reactform" (ngSubmit)="formdata()">
                 <div class="form">
                     <div class="inputBox">
 
-                        <input type="text" ngModel name="Username" #username="ngModel" required>
+                        <input type="text" formGroupName="username"
+                            [ngClass]="{'cssstyle': isSubmit && f['username'].errors} ">
                         <i>Username</i>
-                        <label *ngIf="username.touched && username.invalid" style="color: red;"> Please Enter the
-                            Username</label>
+                        <span *ngIf="isSubmit && f['username'].errors">
+                            <span *ngIf="f['username'].errors['required']">please enter the username</span>
+                        </span>
                     </div>
                     <div class="inputBox">
-                        <input type="password" ngModel #Password="ngModel" name="Password" required>
+                        <input type="password" formControlName="password"
+                            [ngClass]="{'cssstyle': isSubmit && f['password'].errors}">
                         <i>Password</i>
-                        <label *ngIf="Password.touched && Password.invalid" style="color: red;"> Please Enter the
-                            Password</label>
+                        <span *ngIf="isSubmit && f['password'].errors">
+                            <span *ngIf="f['password'].errors['required']">please enter the password</span>
+                        </span>
                     </div>
                     <div class="links">
                         <a href="#">Forgot Password</a>
@@ -291,4 +295,3 @@
         </div>
     </div>
 </section>
-

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,12 +8,39 @@ import { Router } from '@angular/router';
   styleUrl: './sing-up.component.css'
 })
 export class SingUpComponent {
-  constructor(private route: Router) {
+  isSubmit: boolean = false;
 
+  reactform: FormGroup = new FormGroup({
+    username: new FormGroup(''),
+    password: new FormGroup(''),
+  })
+
+  constructor(private fb: FormBuilder, private route: Router) { }
+
+  ngOnInit() {
+    this.reactform = this.fb.group({
+      username: ['', Validators.required],
+      password: ['', [Validators.required, Validators.minLength(6)]]
+    })
   }
-  formdata(getformdata: NgForm) {
-    console.log(getformdata.value)
-    this.route.navigate(['/layout'])
+
+  get f(): { [key: string]: AbstractControl } {
+    return this.reactform.controls;
+  }
+
+  formdata() {
+    console.log(this.reactform.value);
+    if (this.reactform.invalid) {
+      this.isSubmit = true;
+      return;
+    }
+
+    if (this.reactform.valid) {
+      this.isSubmit = false;
+      console.log(this.reactform.value);
+      this.route.navigate(['/login'])
+    }
+
   }
 
 
