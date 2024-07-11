@@ -1,0 +1,62 @@
+<nav class="navbar fixed-top z-2   nav-bg navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"> <img src="assets/images/logo/logo.png" alt=""> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" [routerLink]="['/home'] ">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link" [routerLink]="['/services/servicecom']" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Service
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" [routerLink]="['/services/servicecom']">Service List</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/services/servicedetail']">Service Details</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+            [routerLink]="['/blogs']">
+            Blog
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Blog List Full Width</a></li>
+            <li><a class="dropdown-item" href="#">Blog List Left Sidebar</a></li>
+            <li><a class="dropdown-item" href="#">Blog List Right Sidebar</a></li>
+            <li><a class="dropdown-item" href="#">Blog Details Full Width</a></li>
+            <li><a class="dropdown-item" href="#">Blog Details Full Left Sidebar</a></li>
+            <li><a class="dropdown-item" href="#">Blog Details Full Right Sidebar</a></li>
+
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" [routerLink]="['/about']">About Us</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/projects/projectcomponet']">Project</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/projects/projectdetails']">Project Details</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/faqmodule']">FAQ</a></li>
+            <li><a class="dropdown-item" href="#">404 PAGE</a></li>
+
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/contact']">Contact Us</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <button class="btn header_btn" type="submit">Hire Me <i class="fa fa-arrow-right"
+            aria-hidden="true"></i></button>
+      </form>
+    </div>
+  </div>
+</nav>
