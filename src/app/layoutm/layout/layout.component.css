@@ -1,0 +1,127 @@
+.main_section {
+    width: 100%;
+    background-color: var(--Ebony-Clay);
+    color: white;
+}
+
+.content_area {
+    background-color: var(--Ebony-Clay);
+}
+
+.header_cls {
+    /* padding-top: 3.5rem; */
+    /* margin-top: 1.5rem; */
+}
+
+.footer_section {
+    width: 100%;
+    background-color: var(--Ebony-Clay);
+}
+
+.footer_text {
+    color: var(--pale-sky);
+    font-size: 1.5rem;
+    padding-top: 5rem;
+}
+
+.footext {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    color: rgb(255, 255, 255);
+    font-family: "Cormorant Garamond", serif;
+    box-sizing: border-box;
+}
+
+.commone_btn {
+    padding: 15px 25px;
+    font-size: 18px;
+    box-sizing: border-box;
+    border-radius: 32.5px;
+    flex-shrink: 0;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    vertical-align: middle;
+    cursor: pointer;
+    text-align: start;
+    align-items: center;
+    border: 1px solid var(--pale-sky);
+}
+
+.commone_btn:hover {
+    transition: all 0.5s ease 0s;
+    background-color: rgb(59, 61, 73) !important;
+    border: 1px solid var(--pale-sky);
+    border-radius: 32.5px;
+}
+
+.commone_btn:focus {
+    outline: 0px;
+    box-shadow: rgba(13, 110, 253, 0.25) 0px 0px 0px 0.25rem;
+}
+
+.sub_btn {
+
+    color: var(--pale-sky);
+}
+
+.sub_btn:hover {
+    background-color: var(--Ebony-Clay);
+    color: var(--pale-sky);
+}
+
+.footer_email {
+    width: 600px;
+    padding: 15px 30px;
+}
+
+@media(max-width:567px) {
+    .footer_email {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .footer_info {
+        gap: 1.5rem;
+    }
+}
+
+.icon_styl {
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    padding: 0px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_styl:hover {
+    transition: all 0.5s ease 0s;
+    background-color: rgb(59, 61, 73) !important;
+    border: 1px solid var(--pale-sky);
+    border-radius: 50%;
+}
+
+.foo_copy_text {
+    padding: 30px;
+}
+
+.socel_link a i {
+    width: 60px;
+    height: 60px;
+    float: right;
+    color: #fff;
+}
+
+.socel_link a i:hover {
+    background-color: #fff !important;
+    color: #2A2C39;
+}
+
+.socel_link a i:focus {
+    outline: 0px;
+    box-shadow: rgba(13, 110, 253, 0.25) 0px 0px 0px 0.25rem;
+}

@@ -1,0 +1,140 @@
+.service_section {
+    width: 100%;
+    padding: 5rem 0px;
+    background-color: #2A2C39;
+
+}
+
+.section_btn {
+    width: 234px;
+    color: #fff;
+    line-height: 40px;
+    font-size: 18px;
+    box-sizing: border-box;
+    border-radius: 32.5px;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    flex-shrink: 0;
+    vertical-align: middle;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    border: 1px solid var(--pale-sky);
+
+}
+
+.section_btn:hover {
+    transition: all 0.5s ease 0s;
+    background-color: rgb(59, 61, 73) !important;
+    border: 1px solid var(--pale-sky);
+    border-radius: 32.5px;
+}
+
+.section_btn:focus {
+    outline: 0px;
+    box-shadow: rgba(13, 110, 253, 0.25) 0px 0px 0px 0.25rem;
+}
+
+.service_tittle {
+    font-size: 5rem;
+}
+
+.service_banner {
+    margin: 5rem 0;
+}
+
+.service_cards {
+    aspect-ratio: 1/1;
+}
+
+.card {
+    background-color: #252734;
+}
+
+.figure {
+    margin: 0 0 0rem;
+}
+
+.service_icone img {
+    padding: 30px 55px;
+}
+
+.card {
+    border-radius: 0px;
+}
+
+.card-body .px-5 .text-center>h2 {
+    margin-bottom: 1rem;
+}
+
+.card-body .px-5 .text-center>span,
+i,
+p {
+    color: #858792;
+}
+
+.counter_section {
+    background-color: #252734;
+    width: 100%;
+    /* height: 50vh; */
+    margin-top: 3rem;
+}
+
+.icon_box {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #858792;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+.icon_box>i {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.counter_details>h2 {
+    font-size: 3rem;
+}
+
+.client_section {
+    margin: 3rem 0;
+    background-color: #2A2C39;
+}
+
+.client_section h1 {
+    font-size: 70px;
+}
+
+.trusted_com {
+    margin-bottom: 2rem;
+}
+
+.trust_com_card img {
+    opacity: 1;
+}
+
+.trust_com_card {
+
+    border: 1px solid #403c3cf5;
+    aspect-ratio: 1/1;
+    padding: 55px;
+    background: transparent;
+}
+
+.trust_com_card:hover {
+    background-color: #252734;
+}
+
+/* start mediya qureay */
+@media (max-width: 768px) {
+    .service_cards {
+        margin: 1rem 0;
+    }
+    .service_tittle, .client_section h1 {
+        font-size: 2.5rem;
+    }
+}             
