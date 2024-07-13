@@ -7,6 +7,7 @@ import { SingUpComponent } from './sing-up/sing-up.component';
 import { LayoutmModule } from './layoutm/layoutm.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CostumpipeModule } from './layoutm/costumpipe/costumpipe.module';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -15,6 +16,7 @@ import { CostumpipeModule } from './layoutm/costumpipe/costumpipe.module';
   declarations: [
     AppComponent,
     SingUpComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

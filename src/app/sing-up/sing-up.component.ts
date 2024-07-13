@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { ThisReceiver } from '@angular/compiler';
+import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
@@ -7,41 +8,51 @@ import { Router } from '@angular/router';
   templateUrl: './sing-up.component.html',
   styleUrl: './sing-up.component.css'
 })
-export class SingUpComponent {
+export class SingUpComponent implements OnInit {
   isSubmit: boolean = false;
+  pushformdata: any[] = [];
+  setdata: any[] = [];
 
-  reactform: FormGroup = new FormGroup({
+  singupform: FormGroup = new FormGroup({
     username: new FormGroup(''),
     password: new FormGroup(''),
+    Conformpassword: new FormGroup('')
   })
 
-  constructor(private fb: FormBuilder, private route: Router) { }
+  constructor(private fb: FormBuilder, private route: Router) {
+    const getdata: any = localStorage.getItem("token")
+    this.setdata = JSON.parse(getdata)
+    console.log(this.setdata);
+  }
 
   ngOnInit() {
-    this.reactform = this.fb.group({
-      username: ['', Validators.required],
-      password: ['', [Validators.required, Validators.minLength(6)]]
+    this.singupform = this.fb.group({
+      email: ['', Validators.required],
+      password: ['', [Validators.required, Validators.minLength(6)]],
+      Conformpassword: ['', [Validators.required, Validators.minLength(6)]]
     })
   }
 
   get f(): { [key: string]: AbstractControl } {
-    return this.reactform.controls;
+    return this.singupform.controls;
   }
 
-  formdata() {
-    console.log(this.reactform.value);
-    if (this.reactform.invalid) {
+  singupfun() {
+    if (this.singupform.invalid) {
       this.isSubmit = true;
       return;
     }
 
-    if (this.reactform.valid) {
+    if (this.singupform.valid) {
       this.isSubmit = false;
-      console.log(this.reactform.value);
+      this.pushformdata.push(this.singupform.value)
+      localStorage.setItem("token", JSON.stringify(this.pushformdata))
       this.route.navigate(['/login'])
     }
 
   }
+
+  
 
 
 }

@@ -264,39 +264,29 @@
     <div class="signin">
         <div class="content">
             <h2>Sign In</h2>
-            <form [formGroup]="singupform" (ngSubmit)="singupfun()">
+            <form [formGroup]="reactform" (ngSubmit)="formdata()">
                 <div class="form">
                     <div class="inputBox">
-                        <input type="email" formControlName="email" placeholder="Enter Your Email:-"
+                        <input type="email" formControlName="email"
                             [ngClass]="{'cssstyle': isSubmit && f['email'].errors}">
-                        <!-- <i>Email Id:-</i> -->
+                        <i>Email Id:-</i>
                         <span *ngIf="isSubmit && f['email'].errors">
                             <span *ngIf="f['email'].errors['required']" class="cssstyle">please enter the
                                 email</span>
                         </span>
                     </div>
                     <div class="inputBox">
-                        <input type="password" formControlName="password" placeholder="Enter Your  Password "
+                        <input type="password" formControlName="password"
                             [ngClass]="{'cssstyle': isSubmit && f['password'].errors}">
-                        <!-- <i>Password :-</i> -->
+                        <i>Password :-</i>
                         <span *ngIf="isSubmit && f['password'].errors">
                             <span *ngIf="f['password'].errors['required']" class="cssstyle">please enter the
                                 password</span>
                         </span>
                     </div>
-                    <div class="inputBox">
-                        <input type="Conformpassword" formControlName="Conformpassword"
-                            placeholder="Enter Your Conform Password"
-                            [ngClass]="{'cssstyle': isSubmit && f['Conformpassword'].errors}">
-                        <!-- <i>Conform Password :-</i> -->
-                        <span *ngIf="isSubmit && f['Conformpassword'].errors">
-                            <span *ngIf="f['Conformpassword'].errors['required']" class="cssstyle">please enter the
-                                Conform Password</span>
-                        </span>
-                    </div>
                     <div class="links">
                         <a href="#">Forgot Password</a>
-                        <a [routerLink]="['/login']">Login</a>
+                        <a [routerLink]="['/singup']">Sign In</a>
                     </div>
                     <div class="inputBox">
                         <button type="submit" class="btn btn-primary">
@@ -306,6 +296,6 @@
                     </div>
                 </div>
             </form>
-        </div>  
+        </div>
     </div>
 </section>
