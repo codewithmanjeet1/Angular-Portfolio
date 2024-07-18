@@ -7,10 +7,13 @@ import { Component } from '@angular/core';
 })
 export class ServiceComponent {
   happyclient: number = 100;
-  projects: number = 180;
+  projects: number = 18000;
   eprenceyr: number = 5;
   counter: number = 0;
-  email: string = 'manjeet@gamil.com'
+    input:any;
+
+
+
 
 }
 

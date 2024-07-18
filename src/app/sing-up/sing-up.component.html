@@ -278,7 +278,6 @@
                     <div class="inputBox">
                         <input type="password" formControlName="password" placeholder="Enter Your  Password "
                             [ngClass]="{'cssstyle': isSubmit && f['password'].errors}">
-                        <!-- <i>Password :-</i> -->
                         <span *ngIf="isSubmit && f['password'].errors">
                             <span *ngIf="f['password'].errors['required']" class="cssstyle">please enter the
                                 password</span>
@@ -288,7 +287,6 @@
                         <input type="Conformpassword" formControlName="Conformpassword"
                             placeholder="Enter Your Conform Password"
                             [ngClass]="{'cssstyle': isSubmit && f['Conformpassword'].errors}">
-                        <!-- <i>Conform Password :-</i> -->
                         <span *ngIf="isSubmit && f['Conformpassword'].errors">
                             <span *ngIf="f['Conformpassword'].errors['required']" class="cssstyle">please enter the
                                 Conform Password</span>
@@ -306,6 +304,6 @@
                     </div>
                 </div>
             </form>
-        </div>  
+        </div>
     </div>
 </section>

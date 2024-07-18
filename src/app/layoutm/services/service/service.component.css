@@ -2,7 +2,6 @@
     width: 100%;
     padding: 5rem 0px;
     background-color: #2A2C39;
-
 }
 
 .section_btn {
@@ -134,7 +133,9 @@ p {
     .service_cards {
         margin: 1rem 0;
     }
-    .service_tittle, .client_section h1 {
+
+    .service_tittle,
+    .client_section h1 {
         font-size: 2.5rem;
     }
-}             
+}

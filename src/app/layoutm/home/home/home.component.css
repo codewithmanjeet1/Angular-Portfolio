@@ -44,5 +44,7 @@
 .hero_img img{
     background-size: cover;
     width: 100%;
+    border: 2px solid #fff;
+    margin  : 10px;
     
 }

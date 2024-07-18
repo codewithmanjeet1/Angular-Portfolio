@@ -1,0 +1,244 @@
+.service_details {
+    width: 100%;
+    padding: 5rem 0px;
+    background-color: #252734;
+}
+
+.service_details_title {
+    margin: 5.5rem 0;
+    padding: 3rem 0;
+}
+
+.service_details_title h2 {
+    font-size: 5rem;
+}
+
+.section_btn {
+    width: 260px;
+    color: #fff;
+    line-height: 40px;
+    font-size: 18px;
+    box-sizing: border-box;
+    border-radius: 32.5px;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    flex-shrink: 0;
+    vertical-align: middle;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    background-color: aiceblue;
+    border: 1px solid var(--pale-sky);
+
+}
+
+.section_btn:hover {
+    transition: all 0.5s ease 0s;
+    background-color: rgb(59, 61, 73) !important;
+    border: 1px solid var(--pale-sky);
+    border-radius: 32.5px;
+}
+
+.section_btn:focus {
+    outline: 0px;
+    box-shadow: rgba(13, 110, 253, 0.25) 0px 0px 0px 0.25rem;
+}
+
+.service_cotegory {
+    width: 100%;
+    padding: 5rem 0;
+    margin: 0;
+    background-color: #2A2C39;
+}
+
+.sidebar-widget-single {
+    padding: 50px 20px;
+    margin-bottom: 5rem;
+    background-color: #252734;
+}
+
+.sidebar-widget-single h3 {
+    font-size: 2.75rem;
+    font-weight: 600;
+}
+
+
+.sidebar-widget-list {
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-widget-list li {
+    list-style: none;
+    margin: 30px 20px;
+    background: #2A2C39;
+}
+
+.sidebar-widget-list li a.text-span {
+    /* color: #fff; */
+    padding: 20px 30px;
+    background: rgb(42, 44, 57);
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.5s ease 0s;
+
+}
+
+.sidebar-widget-list li a:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(37, 39, 52);
+}
+
+.sidebar-widget-list li a:focus {
+    text-decoration: none;
+    outline: 0px;
+    box-shadow: none;
+}
+
+.service_details_content {
+    margin: 0px;
+    padding-top: 37px;
+}   
+
+.service_details_content p {
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: #a0a2ab;
+    padding-left: 5px;
+
+}
+
+.ux_desing {
+    margin-bottom: 25px;
+    font-size: 55px;
+    font: 600;
+}
+
+.contant-title-item {
+    flex-direction: column;
+}
+
+.content-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.content-item h4 {
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    margin-right: 70px;
+
+}
+
+.service_planing {
+    background-color: #252734;
+    width: 100%;
+    text-align: center;
+    padding-top: 5rem;
+    aspect-ratio: 1 / 2;
+    position: relative;
+}
+
+.plan_amount {
+    font-size: 58px;
+}
+
+.plan_btn {
+    position: absolute;
+    width: 165px;
+    bottom: 107px;
+    left: 27%;
+}
+
+
+.client_section {
+    background-color: #2A2C39;
+    padding: 2rem 0rem 7rem;
+}
+
+.service_tittle {
+    font-size: 5rem;
+}
+
+.service_banner {
+    margin: 5rem 0;
+}
+
+.service_cards {
+    aspect-ratio: 1/1;
+}
+
+.card {
+    background-color: #252734;
+}
+
+.figure {
+    margin: 0 0 0rem;
+}
+
+.service_icone img {
+    padding: 30px 55px;
+}
+
+.card {
+    border-radius: 0px;
+}
+
+.card-body .px-5 .text-center>h2 {
+    margin-bottom: 1rem;
+}
+
+.card-body .px-5 .text-center>span,
+i,
+p {
+    color: #858792;
+}
+
+.trusted_com {
+    margin-bottom: 2rem;
+}
+
+.trust_com_card img {
+    opacity: 1;
+}
+
+.trust_com_card {
+    border: 1px solid #403c3cf5;
+    aspect-ratio: 1/1;
+    padding: 55px;
+    background: transparent;
+}
+
+.trust_com_card:hover {
+    background-color: #252734;
+}
+
+.trusted_com {
+    margin-top: 2rem;
+}
+
+/* start mediya qureay */
+@media (max-width: 768px) {
+    .service_cards {
+        margin: 1rem 0;
+    }
+
+    .service_tittle,
+    .client_section h1 {
+        font-size: 2.5rem;
+    }
+}

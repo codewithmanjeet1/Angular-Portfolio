@@ -6,6 +6,18 @@ import { Router } from '@angular/router';
 })
 export class LoginService {
 
-  constructor(private route :Router) { }
-  
+  constructor(private route: Router) { }
+  getlocalStoreg(id: any) {
+    const setdata: any = localStorage.getItem(id);
+    if (setdata) {
+      const parsedata = JSON.parse(setdata);
+      return parsedata;
+    } else {
+      return [];
+    }
+  }
+
+  setLocalStroge(keyname: any, data: any) {
+    localStorage.setItem(keyname, JSON.stringify(data));
+  }
 }

@@ -10,7 +10,6 @@ import { Router } from '@angular/router';
 })
 export class SingUpComponent implements OnInit {
   isSubmit: boolean = false;
-  pushformdata: any[] = [];
   setdata: any[] = [];
 
   singupform: FormGroup = new FormGroup({
@@ -27,7 +26,7 @@ export class SingUpComponent implements OnInit {
 
   ngOnInit() {
     this.singupform = this.fb.group({
-      email: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(6)]],
       Conformpassword: ['', [Validators.required, Validators.minLength(6)]]
     })
@@ -45,14 +44,14 @@ export class SingUpComponent implements OnInit {
 
     if (this.singupform.valid) {
       this.isSubmit = false;
-      this.pushformdata.push(this.singupform.value)
-      localStorage.setItem("token", JSON.stringify(this.pushformdata))
+      this.setdata.push(this.singupform.value)
+      localStorage.setItem("token", JSON.stringify(this.setdata))
       this.route.navigate(['/login'])
     }
 
   }
 
-  
+
 
 
 }

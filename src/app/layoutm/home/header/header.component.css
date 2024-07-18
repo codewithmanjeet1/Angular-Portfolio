@@ -67,3 +67,23 @@ a.nav-link:focus {
 .icon_bg {
   color: #fff;
 }
+
+.dropdown-menu[data-bs-popper] {
+  top: 68px;
+  background: rgb(59, 61, 73);
+  left: 0px;
+  width: 235px;
+  border-radius: 0px;
+  border: none;
+  color: #fff !important;
+}
+
+.dropdown-menu[data-bs-popper] .dropdown-item {
+  padding: 10px 15px;
+  color: #e3e0e0ca;
+}
+
+.dropdown-menu[data-bs-popper] .dropdown-item:hover {
+  padding: 10px 15px;
+  color: #252734;
+}
