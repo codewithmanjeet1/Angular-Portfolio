@@ -13,7 +13,6 @@ const routes: Routes = [
     loadChildren: () =>
       import('./layoutm/layoutm.module').then((m) => m.LayoutmModule),
   }
-
 ];
 
 @NgModule({
