@@ -1,13 +1,14 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SingUpComponent } from './sing-up/sing-up.component';
 import { LayoutmModule } from './layoutm/layoutm.module';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { CostumpipeModule } from './layoutm/costumpipe/costumpipe.module';
 import { LoginComponent } from './login/login.component';
+import { ToastrModule } from 'ngx-toastr';
 
 
 
@@ -22,8 +23,16 @@ import { LoginComponent } from './login/login.component';
     BrowserModule,
     AppRoutingModule,
     LayoutmModule,
-   ReactiveFormsModule,
-    CostumpipeModule
+    ReactiveFormsModule,
+    CostumpipeModule,
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot(
+      {
+        timeOut: 10000,
+        // positionClass: 'toast-bottom-right',
+        preventDuplicates: true,
+      }
+    )
 
   ],
   providers: [],

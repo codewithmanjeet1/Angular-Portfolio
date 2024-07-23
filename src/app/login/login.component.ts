@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-login',
@@ -15,7 +16,13 @@ export class LoginComponent {
     password: new FormGroup(''),
   })
 
-  constructor(private fb: FormBuilder, private route: Router) { }
+  constructor(private fb: FormBuilder, private route: Router,
+    private toastr: ToastrService
+  ) { }
+
+  showSuccess() {
+    this.toastr.success('Hello world!', 'Toastr fun!');
+  }
 
   ngOnInit() {
     this.reactform = this.fb.group({
@@ -35,6 +42,7 @@ export class LoginComponent {
     } else {
       this.isSubmit = false;
       console.log(this.reactform.value);
+      this.showSuccess()
       this.route.navigate(['/layout'])
     }
 

@@ -19,34 +19,8 @@
 
 .section_btn {
     width: 260px;
-    color: #fff;
-    line-height: 40px;
-    font-size: 18px;
-    box-sizing: border-box;
-    border-radius: 32.5px;
-    padding-left: 40px !important;
-    padding-right: 40px !important;
-    flex-shrink: 0;
-    vertical-align: middle;
-    cursor: pointer;
-    text-align: center;
-    align-items: center;
-    background-color: aiceblue;
-    border: 1px solid var(--pale-sky);
-
 }
 
-.section_btn:hover {
-    transition: all 0.5s ease 0s;
-    background-color: rgb(59, 61, 73) !important;
-    border: 1px solid var(--pale-sky);
-    border-radius: 32.5px;
-}
-
-.section_btn:focus {
-    outline: 0px;
-    box-shadow: rgba(13, 110, 253, 0.25) 0px 0px 0px 0.25rem;
-}
 
 .service_cotegory {
     width: 100%;
@@ -222,7 +196,7 @@ p {
 }
 
 .trust_com_card {
-    border: 1px solid #403c3cf5;
+    border: 1px solid #505569f5;
     aspect-ratio: 1/1;
     padding: 55px;
     background: transparent;

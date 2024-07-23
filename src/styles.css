@@ -76,10 +76,9 @@ ol {
 =====================*/
 :root {
     /* todo  background color  */
-    /* --bg-color:#252734; */
     --Ebony-Clay: #252734;
     --Dust-Storm: #DFCEC2;
-    --pale-sky: #737882;
+    --pale-sky: rgb(133, 135, 146);
     --rever-bed: #3f4e5c;
     --Vempire-Grey: #535056;
 
@@ -129,4 +128,34 @@ a:focus,
 ol li,
 ul li {
     list-style: none;
+}
+
+.common_btn {
+    color: #737882 !important;
+    line-height: 40px;
+    font-size: 18px !important;
+    box-sizing: border-box;
+    border-radius: 32.5px !important;
+    flex-shrink: 0;
+    padding: 15px 40px 15px !important;
+    vertical-align: middle;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    color: #fff !important;
+    border: 1px solid var(--pale-sky) !important;
+}
+
+.common_btn:hover {
+    transition: all 0.5s ease 0s;
+    background-color: rgb(59, 61, 73) !important;
+    border: 1px solid var(--pale-sky);
+    border-radius: 32.5px;
+    color: #fff !important;
+}
+
+.common_btn:focus {
+    outline: 0px;
+    box-shadow: rgba(13, 110, 253, 0.25) 0px 0px 0px 0.25rem;
+
 }

@@ -7,11 +7,10 @@
 .content_area {
     background-color: var(--Ebony-Clay);
 }
-
-.header_cls {
-    /* padding-top: 3.5rem; */
-    /* margin-top: 1.5rem; */
+.top_space{
+    margin-top: 81px;
 }
+
 
 .footer_section {
     width: 100%;

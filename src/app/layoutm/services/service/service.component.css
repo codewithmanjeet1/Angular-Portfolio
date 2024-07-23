@@ -1,38 +1,13 @@
 .service_section {
     width: 100%;
-    padding: 5rem 0px;
+    padding: 3rem 0px;
     background-color: #2A2C39;
 }
 
 .section_btn {
     width: 234px;
-    color: #fff;
-    line-height: 40px;
-    font-size: 18px;
-    box-sizing: border-box;
-    border-radius: 32.5px;
-    padding-left: 40px !important;
-    padding-right: 40px !important;
-    flex-shrink: 0;
-    vertical-align: middle;
-    cursor: pointer;
-    text-align: center;
-    align-items: center;
-    border: 1px solid var(--pale-sky);
-
 }
 
-.section_btn:hover {
-    transition: all 0.5s ease 0s;
-    background-color: rgb(59, 61, 73) !important;
-    border: 1px solid var(--pale-sky);
-    border-radius: 32.5px;
-}
-
-.section_btn:focus {
-    outline: 0px;
-    box-shadow: rgba(13, 110, 253, 0.25) 0px 0px 0px 0.25rem;
-}
 
 .service_tittle {
     font-size: 5rem;
@@ -109,7 +84,7 @@ p {
 }
 
 .trusted_com {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .trust_com_card img {

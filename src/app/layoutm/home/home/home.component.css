@@ -3,40 +3,13 @@
     background-color: var(--Ebony-Clay);
     background-color: transparent;
     width: 100%;
-    padding-top: 10rem;
+    padding-top: 5rem;
     padding-bottom: 3rem;
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.getresume {
-    color: #fff;
-    line-height: 40px;
-    font-size: 18px;
-    box-sizing: border-box;
-    border-radius: 32.5px;
-    flex-shrink: 0;
-    padding-left: 40px !important;
-    padding-right: 40px !important;
-    vertical-align: middle;
-    cursor: pointer;
-    text-align: center;
-    align-items: center;
-    border: 1px solid var(--pale-sky);
-}
-
-.getresume:hover {
-    transition: all 0.5s ease 0s;
-    background-color: rgb(59, 61, 73) !important;
-    border: 1px solid var(--pale-sky);
-    border-radius: 32.5px;
-}
-
-.getresume:focus {
-    outline: 0px;
-    box-shadow: rgba(13, 110, 253, 0.25) 0px 0px 0px 0.25rem;
-}
 
 .hometext {
     font-size: 85px;

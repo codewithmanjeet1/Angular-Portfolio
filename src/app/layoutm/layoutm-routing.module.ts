@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from './layout/layout.component';
 import { HomeComponent } from './home/home/home.component';
+import { ErrorpageComponent } from './errorpage/errorpage.component';
 
 const routes: Routes = [
 
@@ -44,14 +45,19 @@ const routes: Routes = [
         loadChildren: () =>
           import('./faq/faq.module').then((m) => m.FAQModule),
       },
+
       {
         path: 'about',
         loadChildren: () =>
           import('./about-us/about-us.module').then((m) => m.AboutUsModule)
+      },
+      {
+        path: '404page', component: ErrorpageComponent
       }
 
     ]
-  }
+  },
+
 
 
 
